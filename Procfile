@@ -1,3 +1,3 @@
-web: gunicorn app:app
+worker: python flask_search.py
 
 
