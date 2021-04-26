@@ -1,8 +1,4 @@
 Flask==1.1.1
-numpy==1.18.1
-pandas==1.0.1
-sklearn==0.0
-scikit-learn==0.23.1
 itsdangerous==1.1.0
 jinja2==2.11.1
 MarkupSafe==1.1.1
