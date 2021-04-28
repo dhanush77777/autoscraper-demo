@@ -4,7 +4,7 @@ import json
 
 
 amazon_scraper = AutoScraper()
-amazon_scraper.load('amazon-search4.json')
+amazon_scraper.load('amazon-search5.json')
 app = Flask(__name__)
 
 def get_amazon_result(search_query):
