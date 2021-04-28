@@ -21,8 +21,8 @@ def _aggregate_result(result):
             final_result.append({alias: result[alias][i] for alias in result})
         except:
             pass
-    
-    return final_result
+    dd=json.dumps(final_result)
+    return dd
     
 
 
