@@ -2,8 +2,9 @@ from autoscraper import AutoScraper
 from flask import Flask, request,render_template
 
 
+
 amazon_scraper = AutoScraper()
-amazon_scraper.load('amazon-search1')
+amazon_scraper.load('amazon-search3.json')
 app = Flask(__name__)
 
 def get_amazon_result(search_query):
@@ -20,9 +21,11 @@ def _aggregate_result(result):
             final_result.append({alias: result[alias][i] for alias in result})
         except:
             pass
-        
-        
+    
+    
     return final_result
+    #return final_result
+    
 
 
 @app.route('/')
@@ -39,5 +42,6 @@ def search_api():
 if __name__ == '__main__':
     app.run(debug=True)
     
+
 
 
