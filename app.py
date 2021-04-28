@@ -22,9 +22,7 @@ def _aggregate_result(result):
         except:
             pass
     
-    dd=json.dumps(final_result)
-    return dd
-    #return final_result
+    return final_result
     
 
 
