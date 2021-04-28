@@ -1,6 +1,6 @@
 from autoscraper import AutoScraper
 from flask import Flask, request,render_template
-
+import json
 
 
 amazon_scraper = AutoScraper()
@@ -22,8 +22,8 @@ def _aggregate_result(result):
         except:
             pass
     
-    
-    return final_result
+    dd=json.dumps(final_result)
+    return dd
     #return final_result
     
 
